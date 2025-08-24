@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SparkWave Open Innovation</title>
+  <meta name="description" content="Open Innovation hackathon experience: landing, challenge, and dashboard.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <style> body{font-family: Outfit, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;} </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand"><span class="logo"></span> SparkWave</a>
+      <div class="nav-links">
+        <a class="btn" href="#about">About</a>
+        <a class="btn" href="challenge.html">Challenge</a>
+        <a class="btn" href="dashboard.html">Dashboard</a>
+        <button class="btn theme-toggle" data-action="toggle-theme">Toggle Theme</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="bg-aurora" aria-hidden="true"></div>
+    <div class="container content">
+      <div class="reveal">
+        <p class="badge" style="letter-spacing:.3px;color:#9db3d9">Hackathon Category</p>
+        <h1 class="headline">Open Innovation</h1>
+        <p class="subhead">Spark ideas that matter. Build technology-driven solutions to problems you choose. Push the boundaries of originality, feasibility, and impact.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="challenge.html">View Challenge</a>
+          <a class="btn accent" href="dashboard.html">Live Dashboard</a>
+          <a class="btn" href="#tracks">Explore Features</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="container grid feature-grid">
+        <div class="card reveal">
+          <h3 class="section-title">Why Open Innovation?</h3>
+          <p class="muted">While structured problem statements provide direction, true creativity thrives in freedom. Choose a real problem and craft a meaningful tech solution.</p>
+        </div>
+        <div class="card reveal">
+          <h3 class="section-title">What Stands Out</h3>
+          <ul>
+            <li>Originality and clarity of the idea</li>
+            <li>Feasibility and technical depth</li>
+            <li>Potential impact and scalability</li>
+            <li>Design, user experience, and storytelling</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h3 class="section-title">How To Win</h3>
+          <p>Show a coherent narrative: problem → insight → solution → demo → roadmap. Support with metrics and a polished UI.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tracks">
+      <div class="container">
+        <h2 class="section-title">Aesthetic, Smooth, and Powerful</h2>
+        <div class="grid feature-grid">
+          <div class="card reveal"><h4>Parallax + Aurora</h4><p>Soft gradients and motion that feel alive.</p></div>
+          <div class="card reveal"><h4>Scroll Reveal</h4><p>Components animate subtly as they enter view.</p></div>
+          <div class="card reveal"><h4>Page Transitions</h4><p>Seamless fades between pages for a premium feel.</p></div>
+          <div class="card reveal"><h4>Theme Toggle</h4><p>Light/Dark themes with persisted preference.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> SparkWave • Built for hackathons</div>
+  </footer>
+
+  <script src="./scripts/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+

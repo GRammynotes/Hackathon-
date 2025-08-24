@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open Innovation Challenge • SparkWave</title>
+  <meta name="description" content="Problem statement and guidelines for Open Innovation.">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand"><span class="logo"></span> SparkWave</a>
+      <div class="nav-links">
+        <a class="btn" href="index.html#about">About</a>
+        <a class="btn" href="dashboard.html">Dashboard</a>
+        <button class="btn theme-toggle" data-action="toggle-theme">Toggle Theme</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="bg-aurora" aria-hidden="true"></div>
+    <div class="container content">
+      <div class="reveal">
+        <h1 class="headline">Open Innovation Challenge</h1>
+        <p class="subhead">Choose a problem that matters. Build a technology-driven solution that creates real impact.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card reveal">
+      <h2 class="section-title">Problem Statement</h2>
+      <p class="problem">While structured problem statements provide a clear direction, true creativity often emerges when participants are free to explore their own ideas. The Open Innovation challenge invites participants to identify a problem of their choice and develop a technology-driven solution that addresses it in a meaningful way.
+
+Teams are encouraged to think beyond the predefined tracks, experimenting with novel concepts, unique use cases, or emerging technologies. The focus is on originality, feasibility, and potential impact, allowing participants to showcase their creativity without restrictions.
+
+This category serves as a platform for disruptive ideas that may not fit into traditional problem statements but demonstrate strong potential for real-world application and scalability.</p>
+    </section>
+
+    <section class="grid feature-grid">
+      <div class="card reveal">
+        <h3>Evaluation Criteria</h3>
+        <ul>
+          <li>Originality & insight</li>
+          <li>Feasibility & technical execution</li>
+          <li>Impact & scalability</li>
+          <li>Design & user experience</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h3>Deliverables</h3>
+        <ul>
+          <li>Brief problem description & motivation</li>
+          <li>Solution architecture & tech stack</li>
+          <li>Interactive demo or prototype</li>
+          <li>Roadmap with milestones</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h3>Resources</h3>
+        <p>Use datasets, APIs, and tools that showcase your strengths. Cite sources and document assumptions clearly.</p>
+      </div>
+    </section>
+
+    <div class="cta-row" style="margin: 10px 0 40px;">
+      <a class="btn primary" href="dashboard.html">Open Dashboard</a>
+      <a class="btn" href="index.html">Back to Home</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> SparkWave • Open Innovation</div>
+  </footer>
+
+  <script src="./scripts/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+

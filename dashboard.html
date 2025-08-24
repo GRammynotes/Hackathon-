@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Live Dashboard • SparkWave</title>
+  <meta name="description" content="Interactive dashboard with charts, counters, and metrics.">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand"><span class="logo"></span> SparkWave</a>
+      <div class="nav-links">
+        <a class="btn" href="challenge.html">Challenge</a>
+        <a class="btn" href="index.html#about">About</a>
+        <button class="btn theme-toggle" data-action="toggle-theme">Toggle Theme</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="bg-aurora" aria-hidden="true"></div>
+    <div class="container content">
+      <div class="reveal">
+        <h1 class="headline">Live Insights</h1>
+        <p class="subhead">Showcase traction and metrics that matter: users, conversions, uptime, and more.</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="dashboard-root" class="container">
+    <div class="dashboard">
+      <div class="panel card reveal">
+        <h3>Users Over Time</h3>
+        <div id="chart-line" style="width:100%"></div>
+      </div>
+      <div class="panel card reveal">
+        <h3>Signups by Channel</h3>
+        <div id="chart-bar" style="width:100%"></div>
+      </div>
+      <div class="panel card reveal">
+        <h3>Distribution</h3>
+        <div id="chart-donut" style="width:100%"></div>
+      </div>
+      <div class="panel card reveal">
+        <h3>KPIs</h3>
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap: 14px;">
+          <div class="stat"><div class="label">Total Users</div><div class="value" data-counter="32640">0</div></div>
+          <div class="stat"><div class="label">Active Today</div><div class="value" data-counter="1842">0</div></div>
+          <div class="stat"><div class="label">Conversion %</div><div class="value" data-counter="28">0</div></div>
+          <div class="stat"><div class="label">Uptime</div><div class="value" data-counter="99">0</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-row" style="margin: 20px 0 40px;">
+      <a class="btn" href="challenge.html">Back to Challenge</a>
+      <a class="btn" href="index.html">Home</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> SparkWave • Dashboard</div>
+  </footer>
+
+  <script src="./scripts/main.js"></script>
+  <script src="./scripts/charts.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
